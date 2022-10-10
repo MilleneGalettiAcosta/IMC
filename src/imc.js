@@ -9,9 +9,13 @@ const imc = () => {
   const result = document.getElementById("result");
 
   if(nameInput !== '' && height !== '' && weight !== '') {
-    alert("Everything's OK!")
+
+    const calcImc = (weight / (height * height)).toFixed(1);
+
+    result.textContent = calcImc;
+
   } else {
-    result.TextContent = "Preencha todos os campos!!"
+    result.textContent = "Preencha todos os campos!!"
   }
 
 }
