@@ -9,29 +9,31 @@
 </head>
 <body>
   <main>
-    <div>Calculadora de IMC</div>
+    
+    <div class="container">
+      <div id="title">Calculadora de IMC</div>
 
-    <div>
-      <label for="name">Nome Completo:</label>
-      <input type="text" id="name">
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name">
+      </div>
+
+      <div>
+        <label for="height">Altura:</label>
+        <input type="number" id="height">
+      </div>
+
+      <div>
+        <label for="weight">Peso:</label>
+        <input type="number" id="weight">
+      </div>
+
+      <div>
+        <button id="btn-calc">Calcular</button>
+      </div>
+
+      <div id="result"></div>
     </div>
-
-    <div>
-      <label for="height">Altura:</label>
-      <input type="number" id="height">
-    </div>
-
-    <div>
-      <label for="weight">Peso:</label>
-      <input type="number" id="weight">
-    </div>
-
-    <div>
-      <button id="btn-calc">Calcular</button>
-    </div>
-
-    <div id="result"></div>
-
   </main>
   <script src="imc.js"></script>
 </body>
